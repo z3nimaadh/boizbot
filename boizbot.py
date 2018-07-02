@@ -59,7 +59,7 @@ def handle_command(command, channel):
 
     #quote response
     if command.startswith(COMMAND_2):
-        response = "`"+boizify(command)[1:]+"`"
+        response = "`"+boizify(command)[2:]+"`"
 
     # Sends the response back to the channel
     slack_client.api_call(
